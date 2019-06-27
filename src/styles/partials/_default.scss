@@ -1,0 +1,49 @@
+body,
+html,
+#root {
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#root > div {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	background: #f5f5f5;
+	font-family: 'Roboto Mono', 'Open Sans';
+}
+
+.btn {
+	&.btn-primary {
+		background: $color3;
+		border-color: $color3;
+		&:hover {
+			background: $color1;
+			border-color: $color1;
+		}
+	}
+
+	&.btn-link {
+		background: transparent;
+		border-color: transparent;
+		&:hover {
+			background: transparent;
+			border-color: transparent;
+		}
+	}
+
+	&.btn-outline-primary {
+		color: $color3;
+		border-color: $color3;
+
+		&:hover {
+			color: #fff;
+			background: $color3;
+			border-color: $color3;
+		}
+	}
+}

@@ -1,0 +1,690 @@
+{
+	"episodes": [
+		{
+			"id": "3",
+			"data": [
+				{
+					"seasonId": "1",
+					"allepi": [
+						{
+							"id": "1",
+							"imdbId": "tt4227538",
+							"title": "The Original",
+							"releaseDate": "2017-01-28",
+							"duration": "1h 8min"
+						},
+						{
+							"id": "2",
+							"imdbId": "tt4562758",
+							"title": "Chestnut",
+							"releaseDate": "2017-02-02",
+							"duration": "58min"
+						},
+						{
+							"id": "3",
+							"imdbId": "tt4625856",
+							"title": "The Stray",
+							"releaseDate": "2017-02-11",
+							"duration": "59min"
+						},
+						{
+							"id": "4",
+							"imdbId": "tt4625862",
+							"title": "Dissonance Theory",
+							"releaseDate": "2017-02-18",
+							"duration": "58min"
+						},
+						{
+							"id": "5",
+							"imdbId": "tt4625866",
+							"title": "Contrapasso",
+							"releaseDate": "2017-02-25",
+							"duration": "56min"
+						},
+						{
+							"id": "6",
+							"imdbId": "tt4630544",
+							"title": "The Adversary",
+							"releaseDate": "2017-03-04",
+							"duration": "57min"
+						},
+						{
+							"id": "7",
+							"imdbId": "tt4630546",
+							"title": "Trompe L'Oeil",
+							"releaseDate": "2017-03-11",
+							"duration": "56min"
+						},
+						{
+							"id": "8",
+							"imdbId": "tt4458814",
+							"title": "Trace Decay",
+							"releaseDate": "2017-03-18",
+							"duration": "57min"
+						},
+						{
+							"id": "9",
+							"imdbId": "tt5220026",
+							"title": "The Well-Tempered Clavier",
+							"releaseDate": "2017-03-25",
+							"duration": "58min"
+						},
+						{
+							"id": "10",
+							"imdbId": "tt5229638",
+							"title": "The Bicameral Mind",
+							"releaseDate": "2017-04-01",
+							"duration": "1h 30min"
+						}
+					]
+				},
+				{
+					"seasonId": "2",
+					"allepi": [
+						{
+							"id": "1",
+							"imdbId": "tt6243294",
+							"title": "Journey into Night",
+							"releaseDate": "2018-08-18",
+							"duration": "1h 10min"
+						},
+						{
+							"id": "2",
+							"imdbId": "tt6243296",
+							"title": "Reunion",
+							"releaseDate": "2018-08-25",
+							"duration": "58min"
+						},
+						{
+							"id": "3",
+							"imdbId": "tt6243298",
+							"title": "Virtù e Fortuna",
+							"releaseDate": "2018-09-01",
+							"duration": "59min"
+						},
+						{
+							"id": "4",
+							"imdbId": "tt6243300",
+							"title": "The Riddle of the Sphinx",
+							"releaseDate": "2018-09-08",
+							"duration": "1h 11min"
+						},
+						{
+							"id": "5",
+							"imdbId": "tt6243302",
+							"title": "Akane no Mai",
+							"releaseDate": "2018-09-15",
+							"duration": "58min"
+						},
+						{
+							"id": "6",
+							"imdbId": "tt6243304",
+							"title": "Phase Space",
+							"releaseDate": "2018-09-22",
+							"duration": "58min"
+						},
+						{
+							"id": "7",
+							"imdbId": "tt6243306",
+							"title": "Les Écorchés",
+							"releaseDate": "2018-09-29",
+							"duration": "58min"
+						},
+						{
+							"id": "8",
+							"imdbId": "tt6243308",
+							"title": "Kiksuya",
+							"releaseDate": "2018-10-06",
+							"duration": "58min"
+						},
+						{
+							"id": "9",
+							"imdbId": "tt6243310",
+							"title": "Vanishing Point",
+							"releaseDate": "2018-10-13",
+							"duration": "59min"
+						},
+						{
+							"id": "10",
+							"imdbId": "tt6243312",
+							"title": "The Passenger",
+							"releaseDate": "2018-10-20",
+							"duration": "1h 30min"
+						}
+					]
+				},
+				{
+					"seasonId": "3",
+					"allepi": [
+						{
+							"id": "1",
+							"imdbId": "tt8358332",
+							"title": "Episode #3.1",
+							"releaseDate": "2020-05-17",
+							"duration": "1h 2min"
+						},
+						{
+							"id": "2",
+							"imdbId": "tt9899922",
+							"title": "Episode #3.2",
+							"releaseDate": "2020-05-17",
+							"duration": "1h 2min"
+						},
+						{
+							"id": "3",
+							"imdbId": "tt10011150",
+							"title": "Episode #3.3",
+							"releaseDate": "2020-05-17",
+							"duration": "1h 2min"
+						},
+						{
+							"id": "4",
+							"imdbId": "tt10011152",
+							"title": "Episode #3.4",
+							"releaseDate": "2020-05-17",
+							"duration": "1h 2min"
+						},
+						{
+							"id": "5",
+							"imdbId": "tt10011154",
+							"title": "Episode #3.5",
+							"releaseDate": "2020-05-17",
+							"duration": "1h 2min"
+						},
+						{
+							"id": "6",
+							"imdbId": "tt10011156",
+							"title": "Episode #3.6",
+							"releaseDate": "2020-05-17",
+							"duration": "1h 2min"
+						},
+						{
+							"id": "7",
+							"imdbId": "tt10011158",
+							"title": "Episode #3.7",
+							"releaseDate": "2020-05-17",
+							"duration": "1h 2min"
+						},
+						{
+							"id": "8",
+							"imdbId": "tt10011160",
+							"title": "Episode #3.8",
+							"releaseDate": "2020-05-17",
+							"duration": "1h 2min"
+						},
+						{
+							"id": "9",
+							"imdbId": "tt10011162",
+							"title": "Episode #3.9",
+							"releaseDate": "2020-05-17",
+							"duration": "1h 2min"
+						},
+						{
+							"id": "10",
+							"imdbId": "tt8387428",
+							"title": "Episode #3.10",
+							"releaseDate": "2020-05-17",
+							"duration": "1h 2min"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "5",
+			"data": [
+				{
+					"seasonId": "1",
+					"allepi": [
+						{
+							"id": "1",
+							"imdbId": "tt6807344",
+							"title": "Efectuar lo acordado",
+							"releaseDate": "2017-08-28",
+							"duration": "47min"
+						},
+						{
+							"id": "2",
+							"imdbId": "tt6798708",
+							"title": "Imprudencias letales",
+							"releaseDate": "2017-09-04",
+							"duration": "41min"
+						},
+						{
+							"id": "3",
+							"imdbId": "tt6851488",
+							"title": "Errar al disparar",
+							"releaseDate": "2017-09-11",
+							"duration": "50min"
+						},
+						{
+							"id": "4",
+							"imdbId": "tt6851490",
+							"title": "Caballo de Troya",
+							"releaseDate": "2017-09-18",
+							"duration": "51min"
+						},
+						{
+							"id": "5",
+							"imdbId": "tt6851492",
+							"title": "El día de la marmota",
+							"releaseDate": "2017-09-25",
+							"duration": "42min"
+						},
+						{
+							"id": "6",
+							"imdbId": "tt6851494",
+							"title": "La cálida Guerra Fría",
+							"releaseDate": "2017-10-02",
+							"duration": "43min"
+						},
+						{
+							"id": "7",
+							"imdbId": "tt6851496",
+							"title": "Refrigerada inestabilidad",
+							"releaseDate": "2017-10-09",
+							"duration": "47min"
+						},
+						{
+							"id": "8",
+							"imdbId": "tt6851500",
+							"title": "Tú lo has buscado",
+							"releaseDate": "2017-10-16",
+							"duration": "43min"
+						},
+						{
+							"id": "9",
+							"imdbId": "tt6851502",
+							"title": "El que la sigue la consigue",
+							"releaseDate": "2017-10-23",
+							"duration": "42min"
+						},
+						{
+							"id": "10",
+							"imdbId": "tt6851504",
+							"title": "Se acabaron las máscaras",
+							"releaseDate": "2018-02-11",
+							"duration": "54min"
+						},
+						{
+							"id": "11",
+							"imdbId": "tt6851506",
+							"title": "La cabeza del plan",
+							"releaseDate": "2018-02-18",
+							"duration": "42min"
+						},
+						{
+							"id": "12",
+							"imdbId": "tt6851508",
+							"title": "Cuestión de eficacia",
+							"releaseDate": "2018-02-28",
+							"duration": "43min"
+						},
+						{
+							"id": "13",
+							"imdbId": "tt6851512",
+							"title": "¿Qué hemos hecho?",
+							"releaseDate": "2018-03-07",
+							"duration": "55min"
+						},
+						{
+							"id": "14",
+							"imdbId": "tt6851516",
+							"title": "A contrarreloj",
+							"releaseDate": "2018-03-14",
+							"duration": "42min"
+						},
+						{
+							"id": "15",
+							"imdbId": "tt6816492",
+							"title": "Bella ciao",
+							"releaseDate": "2018-03-21",
+							"duration": "43min"
+						}
+					]
+				},
+				{
+					"seasonId": "2",
+					"allepi": [
+						{
+							"id": "1",
+							"imdbId": "tt8690768",
+							"title": "Se acabaron las máscaras",
+							"releaseDate": "2018-05-18",
+							"duration": "1h 10min"
+						},
+						{
+							"id": "2",
+							"imdbId": "tt8716434",
+							"title": "La cabeza del plan",
+							"releaseDate": "2018-08-02",
+							"duration": "1h 10min"
+						},
+						{
+							"id": "3",
+							"imdbId": "tt8716448",
+							"title": "Cuestión de eficacia",
+							"releaseDate": "Invalid date",
+							"duration": "1h 10min"
+						},
+						{
+							"id": "4",
+							"imdbId": "tt8716454",
+							"title": "Episode #2.4",
+							"releaseDate": "Invalid date",
+							"duration": "1h 10min"
+						},
+						{
+							"id": "5",
+							"imdbId": "tt8716464",
+							"title": "Episode #2.5",
+							"releaseDate": "Invalid date",
+							"duration": "1h 10min"
+						},
+						{
+							"id": "6",
+							"imdbId": "tt8716470",
+							"title": "Episode #2.6",
+							"releaseDate": "Invalid date",
+							"duration": "1h 10min"
+						},
+						{
+							"id": "7",
+							"imdbId": "tt8716484",
+							"title": "Episode #2.7",
+							"releaseDate": "Invalid date",
+							"duration": "1h 10min"
+						}
+					]
+				},
+				{
+					"seasonId": "3",
+					"allepi": [
+						{
+							"id": "1",
+							"imdbId": "tt8299494",
+							"title": "Episode #3.1",
+							"releaseDate": "2019-11-14",
+							"duration": "1h 10min"
+						},
+						{
+							"id": "2",
+							"imdbId": "tt8299496",
+							"title": "Episode #3.2",
+							"releaseDate": "2019-05-18",
+							"duration": "1h 10min"
+						},
+						{
+							"id": "3",
+							"imdbId": "tt8299498",
+							"title": "Episode #3.3",
+							"releaseDate": "2019-05-18",
+							"duration": "1h 10min"
+						},
+						{
+							"id": "4",
+							"imdbId": "tt8299500",
+							"title": "Episode #3.4",
+							"releaseDate": "2019-05-18",
+							"duration": "1h 10min"
+						},
+						{
+							"id": "5",
+							"imdbId": "tt8299502",
+							"title": "Episode #3.5",
+							"releaseDate": "2019-05-18",
+							"duration": "1h 10min"
+						},
+						{
+							"id": "6",
+							"imdbId": "tt8299504",
+							"title": "Episode #3.6",
+							"releaseDate": "2019-05-18",
+							"duration": "1h 10min"
+						},
+						{
+							"id": "7",
+							"imdbId": "tt8299506",
+							"title": "Episode #3.7",
+							"releaseDate": "2019-05-18",
+							"duration": "1h 10min"
+						},
+						{
+							"id": "8",
+							"imdbId": "tt8299508",
+							"title": "Episode #3.8",
+							"releaseDate": "2019-05-18",
+							"duration": "1h 10min"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "6",
+			"data": [
+				{
+					"seasonId": "1",
+					"allepi": [
+						{
+							"id": "1",
+							"imdbId": "tt0278784",
+							"title": "Episode #1.1",
+							"releaseDate": "1991-08-03",
+							"duration": "1h 34min"
+						},
+						{
+							"id": "2",
+							"imdbId": "tt0734840",
+							"title": "Episode #1.2",
+							"releaseDate": "1990-08-08",
+							"duration": "46min"
+						},
+						{
+							"id": "3",
+							"imdbId": "tt0734843",
+							"title": "Episode #1.3",
+							"releaseDate": "1990-08-15",
+							"duration": "47min"
+						},
+						{
+							"id": "4",
+							"imdbId": "tt0734831",
+							"title": "Episode #1.4",
+							"releaseDate": "1990-08-22",
+							"duration": "47min"
+						},
+						{
+							"id": "5",
+							"imdbId": "tt0734837",
+							"title": "Episode #1.5",
+							"releaseDate": "1990-08-29",
+							"duration": "47min"
+						},
+						{
+							"id": "6",
+							"imdbId": "tt0734818",
+							"title": "Episode #1.6",
+							"releaseDate": "1990-09-05",
+							"duration": "47min"
+						},
+						{
+							"id": "7",
+							"imdbId": "tt0734830",
+							"title": "Episode #1.7",
+							"releaseDate": "1990-09-12",
+							"duration": "46min"
+						},
+						{
+							"id": "8",
+							"imdbId": "tt0734835",
+							"title": "Episode #1.8",
+							"releaseDate": "1990-09-18",
+							"duration": "46min"
+						}
+					]
+				},
+				{
+					"seasonId": "2",
+					"allepi": [
+						{
+							"id": "1",
+							"imdbId": "tt0734826",
+							"title": "Episode #2.1",
+							"releaseDate": "1991-01-26",
+							"duration": "1h 33min"
+						},
+						{
+							"id": "2",
+							"imdbId": "tt0734817",
+							"title": "Episode #2.2",
+							"releaseDate": "1991-02-01",
+							"duration": "46min"
+						},
+						{
+							"id": "3",
+							"imdbId": "tt0734836",
+							"title": "Episode #2.3",
+							"releaseDate": "1991-02-08",
+							"duration": "47min"
+						},
+						{
+							"id": "4",
+							"imdbId": "tt0734823",
+							"title": "Episode #2.4",
+							"releaseDate": "1991-02-15",
+							"duration": "47min"
+						},
+						{
+							"id": "5",
+							"imdbId": "tt0734838",
+							"title": "Episode #2.5",
+							"releaseDate": "1991-02-22",
+							"duration": "47min"
+						},
+						{
+							"id": "6",
+							"imdbId": "tt0734819",
+							"title": "Episode #2.6",
+							"releaseDate": "1991-03-01",
+							"duration": "47min"
+						},
+						{
+							"id": "7",
+							"imdbId": "tt0734824",
+							"title": "Episode #2.7",
+							"releaseDate": "1991-03-08",
+							"duration": "47min"
+						},
+						{
+							"id": "8",
+							"imdbId": "tt0734822",
+							"title": "Episode #2.8",
+							"releaseDate": "1991-03-15",
+							"duration": "47min"
+						},
+						{
+							"id": "9",
+							"imdbId": "tt0734814",
+							"title": "Episode #2.9",
+							"releaseDate": "1991-03-29",
+							"duration": "46min"
+						},
+						{
+							"id": "10",
+							"imdbId": "tt0734820",
+							"title": "Episode #2.10",
+							"releaseDate": "1991-04-05",
+							"duration": "47min"
+						},
+						{
+							"id": "11",
+							"imdbId": "tt0734825",
+							"title": "Episode #2.11",
+							"releaseDate": "1991-04-12",
+							"duration": "47min"
+						},
+						{
+							"id": "12",
+							"imdbId": "tt0734833",
+							"title": "Episode #2.12",
+							"releaseDate": "1991-05-10",
+							"duration": "46min"
+						},
+						{
+							"id": "13",
+							"imdbId": "tt0734816",
+							"title": "Episode #2.13",
+							"releaseDate": "1991-05-17",
+							"duration": "46min"
+						},
+						{
+							"id": "14",
+							"imdbId": "tt0734821",
+							"title": "Episode #2.14",
+							"releaseDate": "1991-05-31",
+							"duration": "46min"
+						},
+						{
+							"id": "15",
+							"imdbId": "tt0734832",
+							"title": "Episode #2.15",
+							"releaseDate": "1991-06-07",
+							"duration": "46min"
+						},
+						{
+							"id": "16",
+							"imdbId": "tt0734834",
+							"title": "Episode #2.16",
+							"releaseDate": "1991-06-14",
+							"duration": "47min"
+						},
+						{
+							"id": "17",
+							"imdbId": "tt0734842",
+							"title": "Episode #2.17",
+							"releaseDate": "1991-07-24",
+							"duration": "46min"
+						},
+						{
+							"id": "18",
+							"imdbId": "tt0734828",
+							"title": "Episode #2.18",
+							"releaseDate": "1991-07-31",
+							"duration": "46min"
+						},
+						{
+							"id": "19",
+							"imdbId": "tt0734841",
+							"title": "Episode #2.19",
+							"releaseDate": "1991-08-07",
+							"duration": "47min"
+						},
+						{
+							"id": "20",
+							"imdbId": "tt0734839",
+							"title": "Episode #2.20",
+							"releaseDate": "1991-08-14",
+							"duration": "46min"
+						},
+						{
+							"id": "21",
+							"imdbId": "tt0734827",
+							"title": "Episode #2.21",
+							"releaseDate": "1991-10-06",
+							"duration": "46min"
+						},
+						{
+							"id": "22",
+							"imdbId": "tt0734815",
+							"title": "Episode #2.22",
+							"releaseDate": "1991-10-06",
+							"duration": "50min"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

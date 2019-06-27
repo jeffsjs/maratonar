@@ -1,0 +1,8 @@
+{
+  "seasons": [
+    { "id": "3", "data": [ { "id": "1", "numberOfEpisodes": 10, "releaseDate": "2017-01-28" }, { "id": "2", "numberOfEpisodes": 10, "releaseDate": "2018-08-18" }, { "id": "3", "numberOfEpisodes": 10, "releaseDate": "2020-05-17" } ] },
+    { "id": "5", "data": [ { "id": "1", "numberOfEpisodes": 15, "releaseDate": "2017-08-28" }, { "id": "2", "numberOfEpisodes": 7, "releaseDate": "2018-05-18" }, { "id": "3", "numberOfEpisodes": 8, "releaseDate": "2019-11-14" } ] },
+    { "id": "6", "data": [ { "id": "1", "numberOfEpisodes": 8, "releaseDate": "1991-08-03" }, { "id": "2", "numberOfEpisodes": 22, "releaseDate": "1991-01-26" } ] }
+  ]
+}
+

@@ -1,0 +1,25 @@
+{
+	"series": [
+		{
+			"id": "3",
+			"imdbId": "tt0475784",
+			"title": "Westworld",
+			"numberOfSeasons": 3,
+			"releaseDate": "2017-01-28"
+		},
+		{
+			"id": "5",
+			"imdbId": "tt6468322",
+			"title": "La Casa de Papel",
+			"numberOfSeasons": 3,
+			"releaseDate": "2017-08-28"
+		},
+		{
+			"id": "6",
+			"imdbId": "tt0098936",
+			"title": "Twin Peaks",
+			"numberOfSeasons": 2,
+			"releaseDate": "1991-08-03"
+		}
+	]
+}
