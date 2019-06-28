@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 
+import NextEpisode from '../components/next-episode'
+
 class Calcular extends Component {
 	render()  {
-    return <div> CALCULAR </div>
+    const { idSerie } = this.props.match.params;
+    return <div> 
+      CALCULAR 
+      <NextEpisode idSerie={idSerie} />
+    </div>
   }
 }
 

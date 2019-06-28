@@ -1,11 +1,12 @@
+const PATH = __dirname;
 const jsonServer = require('json-server');
 const server = jsonServer.create();
-const router = jsonServer.router('./db/series.json');
+const router = jsonServer.router(PATH+'/db/series.json');
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 3004;
 
-var dbSeasons = require('./db/seasons.json');
-var dbEpisodes = require('./db/episodes.json');
+var dbSeasons = require(PATH+'/db/seasons.json');
+var dbEpisodes = require(PATH+'/db/episodes.json');
 
 server.use(jsonServer.bodyParser);
 server.use(middlewares);

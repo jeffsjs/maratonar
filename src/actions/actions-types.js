@@ -2,3 +2,12 @@ export const LOAD_SERIES = 'LOAD_SERIES';
 
 export const SUCCESS_SERIES = 'SUCCESS_SERIES';
 export const FAILURE_SERIES = 'FAILURE_SERIES';
+
+export const SHOW_SERIE = 'SHOW_SERIE';
+export const GET_SERIE = 'GET_SERIE';
+export const SUCCESS_SERIE_ID = 'SUCCESS_SERIE_ID';
+export const FAILURE_SERIE_ID = 'FAILURE_SERIE_ID';
+
+export const GET_SEASONS = 'GET_SEASONS';
+export const SUCCESS_SEASONS = 'SUCCESS_SEASONS';
+export const FAILURE_SEASONS = 'FAILURE_SEASONS';

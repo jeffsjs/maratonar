@@ -3,16 +3,16 @@ import { withRouter } from 'react-router';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { loadingSeries, showSerie } from '../actions/actions';
+import { loadingSeries } from '../actions/actions';
 
-class ListSeries extends Component {
+class FormCalcular extends Component {
 	componentDidMount() {
-		const { loadingSeries } = this.props;
-		loadingSeries();
+
 	}
 
 	render() {
-		const { state, history, showSerie } = this.props;
+		const { state, history } = this.props;
+		debugger
 		const { loading, series, error, errorMessage } = state;
 
 		if (error) return <div>{errorMessage}</div>;
@@ -21,7 +21,7 @@ class ListSeries extends Component {
 		return (
 			<div className='series'>
 				{series.map(serie => (
-					<div key={serie.id} onClick={() =>{ showSerie(serie.id); history.push(`/calcular/${serie.id}`)} }>{serie.title}</div>
+					<div key={serie.id} onClick={() => history.push(`/calcular/${serie.id}`) }>{serie.title}</div>
 				))}
 			</div>
 		);
@@ -33,9 +33,9 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch =>
-	bindActionCreators({ loadingSeries, showSerie }, dispatch);
+	bindActionCreators({ loadingSeries }, dispatch);
 
 export default connect(
 	mapStateToProps,
 	mapDispatchToProps
-)(withRouter(ListSeries));
+)(FormCalcular);

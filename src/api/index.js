@@ -6,6 +6,14 @@ export const getSeries = () => {
 	return instance.get('/series'+DATE_DEFAULT);
 };
 
+export const getSerieById = (idSerie) => {
+	return instance.get(`/series/${idSerie}`+DATE_DEFAULT);
+};
+
+export const getSeasons = (idSerie) => {
+	return instance.get(`/series/${idSerie}/seasons`+DATE_DEFAULT);
+};
+
 
 // export const postUser = params => {
 // 	return instance.post('/users/create', params);
