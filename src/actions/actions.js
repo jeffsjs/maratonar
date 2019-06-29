@@ -14,6 +14,11 @@ export const getSeasons = seasons => ({
   payload: seasons
 });
 
+export const getEpisodes = episodes => ({
+  type: ACTIONS.GET_EPISODES,
+  payload: episodes
+});
+
 export const showSerie = serie => ({
   type: ACTIONS.SHOW_SERIE,
   payload: serie
