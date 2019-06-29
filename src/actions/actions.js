@@ -23,3 +23,9 @@ export const showSerie = serie => ({
   type: ACTIONS.SHOW_SERIE,
   payload: serie
 });
+
+
+export const setNextEpisode = episode => ({
+  type: ACTIONS.SET_NEXT_EPISODE,
+  payload: episode
+});

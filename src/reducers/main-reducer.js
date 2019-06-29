@@ -8,11 +8,13 @@ const INITIAL_STATE = {
 	seasons: [],
 	episodes: [],
 	selectedSerie: '',
-	marathonDuration: 0,
 	dateStart: '',
 	dateNextEpisode: '',
-	hourPerDay: 0,
+	nextEpisode: [],
+	marathonDuration: 0,
 	daysToNextEpisode: 0,
+	minutesToNextEpisode: 0,
+	hoursToNextEpisode: 0,
 };
 
 export default function(state = INITIAL_STATE, action) {
@@ -22,7 +24,7 @@ export default function(state = INITIAL_STATE, action) {
 		case ACTIONS.SUCCESS_SERIES:
 			return { ...state, series: [...action.payload], loading: false };
 		case ACTIONS.SHOW_SERIE:
-			return { ...state, selectedSerie: action.payload };
+			return { ...state, selectedSerie: action.payload, seasons: [], episodes: [], nextEpisode: [], dateNextEpisode: ''};
 		case ACTIONS.SUCCESS_SERIE_ID:
 			return { ...state, series: [action.payload.serie], selectedSerie: action.payload.id };
 		case ACTIONS.GET_SEASONS:
@@ -35,10 +37,13 @@ export default function(state = INITIAL_STATE, action) {
 		case ACTIONS.SUCCESS_EPISODES:
 				return { ...state, episodes: [...state.episodes, action.payload], loading: false};
 
+		case ACTIONS.SET_NEXT_EPISODE:
+			return {...state, dateNextEpisode: action.payload.nextEpisode.releaseDate, ...action.payload };
+
 		case ACTIONS.FAILURE_SERIES:
 		case ACTIONS.FAILURE_SERIE_ID:
 		case ACTIONS.FAILURE_EPISODES:
-			return { ...state, series: [], season: [], episodes: [], loading: false, error: true, errorMessage: action.payload };
+			return { ...state, series: [], season: [], episodes: [], nextEpisode: [], loading: false, error: true, errorMessage: action.payload };
 		default:
 			return state;
 	}
