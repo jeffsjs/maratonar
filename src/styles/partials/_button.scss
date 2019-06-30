@@ -1,0 +1,30 @@
+.btn {
+	&.btn-primary {
+		background: $color3;
+		border-color: $color3;
+		&:hover {
+			background: $color1;
+			border-color: $color1;
+		}
+	}
+
+	&.btn-link {
+		background: transparent;
+		border-color: transparent;
+		&:hover {
+			background: transparent;
+			border-color: transparent;
+		}
+	}
+
+	&.btn-outline-primary {
+		color: $color3;
+		border-color: $color3;
+
+		&:hover {
+			color: #fff;
+			background: $color3;
+			border-color: $color3;
+		}
+	}
+}

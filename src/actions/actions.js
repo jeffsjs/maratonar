@@ -24,8 +24,13 @@ export const showSerie = serie => ({
   payload: serie
 });
 
-
 export const setNextEpisode = episode => ({
   type: ACTIONS.SET_NEXT_EPISODE,
   payload: episode
+});
+
+
+export const loadPosterSeason = season => ({
+  type: ACTIONS.LOAD_POSTER_SEASON,
+  payload: season
 });

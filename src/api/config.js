@@ -9,9 +9,24 @@ const instance = axios.create({
   }
 });
 
+const instanceOMBD = axios.create({
+  baseURL: config.baseURLOMBD,
+  timeout: 60000,
+  headers: {
+  }
+});
+
+instanceOMBD.interceptors.request.use((configs) => ({
+  ...configs,
+  params: {
+    ...configs.params,
+    apikey: config.keyOMBD
+  }
+}))
+
 // instance.interceptors.request.use(function (config) {
 //   config.headers.Authorization = 'Bearer ' + getCookie('token');
 //   return config;
 // })
 
-export default instance;
+export default { instance, instanceOMBD };

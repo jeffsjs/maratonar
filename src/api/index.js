@@ -1,4 +1,6 @@
-import instance from './config';
+import config from './config';
+const { instance, instanceOMBD } = config;
+
 const DATE_DEFAULT = '?mockDate=2019-03-01'
 
 export const getSeries = () => {
@@ -15,4 +17,8 @@ export const getSeasons = (idSerie) => {
 
 export const getEpisodes = ({idSerie, idSeason}) => {
 	return instance.get(`/series/${idSerie}/seasons/${idSeason}/episodes`+DATE_DEFAULT);
+};
+
+export const getPosterSeason = (imdbId) => {
+	return instanceOMBD.get('', { params: {i: imdbId}});
 };

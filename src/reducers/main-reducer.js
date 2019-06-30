@@ -40,6 +40,9 @@ export default function(state = INITIAL_STATE, action) {
 		case ACTIONS.SET_NEXT_EPISODE:
 			return {...state, dateNextEpisode: action.payload.nextEpisode.releaseDate, ...action.payload };
 
+		case ACTIONS.SET_POSTER_SEASON:
+			return {...state, series: addPoster(action.payload, state) };
+
 		case ACTIONS.FAILURE_SERIES:
 		case ACTIONS.FAILURE_SERIE_ID:
 		case ACTIONS.FAILURE_EPISODES:
@@ -47,6 +50,16 @@ export default function(state = INITIAL_STATE, action) {
 		default:
 			return state;
 	}
+}
+
+const addPoster = (poster, state) => {
+	let { series } = state;
+	series.forEach(serie => {
+		if (serie.imdbId === poster.imdbId) {
+			serie.img = poster.img
+		} 
+	})
+	return series;
 }
 
 // const deleteCampanha = (idCampanha, state) => {

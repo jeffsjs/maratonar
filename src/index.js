@@ -8,7 +8,12 @@ import './styles/app.css'
 
 ReactDOM.render(
   <Provider store={Store}>
-    <Routes />
+    
+    <div className='main'>
+      <div className='container'>
+        <Routes />
+      </div>
+    </div>
   </Provider>,
   document.getElementById('root')
 );

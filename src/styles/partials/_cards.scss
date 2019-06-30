@@ -1,0 +1,35 @@
+.card-season {
+	display: inline-block;
+	flex: none;
+	width: 200px;
+	cursor: pointer;
+	color: #fff;
+
+	.card-code,
+	.card-title {
+		background: $color3;
+	}
+
+	.card-seadons {
+		background: $color2;
+	}
+
+
+
+	.card-poster {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		overflow: hidden;
+		height: 294px;
+		background: $color2;
+
+		.img-poster {
+			width: 100%;
+		}
+
+		svg {
+			width: 15px;
+		}
+	}
+}
