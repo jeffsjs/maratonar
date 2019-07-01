@@ -5,6 +5,10 @@
 	cursor: pointer;
 	color: #fff;
 
+	&:hover {
+		box-shadow: 0 0 5px 0px #456990;
+	}
+
 	.card-code,
 	.card-title {
 		background: $color3;

@@ -1,13 +1,29 @@
 # series-api-mock
 
-Mock to test Maratona.
+Mock to test Maratonar App.
 
 ## Setup
 
-Run `npm install` on root folder.
+Install all packages with Yarn
+
+```bash
+  yarn install
+```
 
 ```bash
   yarn start
 ```
 
-his provides a simple example of how to use [json-server](https://github.com/typicode/json-server).
+* Dev mode:
+
+```bash
+  yarn debug
+```
+
+## Specification 
+
+> [API Specification](https://github.com/luanpotter/series-api/blob/master/APIS.md) 
+
+
+
+This provides a simple example of how to use [json-server](https://github.com/typicode/json-server).

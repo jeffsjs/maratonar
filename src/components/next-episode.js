@@ -70,7 +70,7 @@ class NextEpisode extends Component {
 		
 		const serie = series.filter(s => s.id === idSerie)[0];
 		
-		if (error) return <div>{errorMessage}</div>;
+		if (error) return <div className='error'>{errorMessage}</div>;
 		if (!dateNextEpisode || !serie || loading || seasons.length !== episodes.length) return <Loading />;
 
 		return (

@@ -34,7 +34,7 @@ class ListSeries extends Component {
 		const { state, history, showSerie } = this.props;
 		const { loading, series, error, errorMessage } = state;
 
-		if (error) return <div>{errorMessage}</div>;
+		if (error) return <div className='error'>{errorMessage}</div>;
 		if (loading) return <Loading />;
 		if (series.length > 0) getPosterSeason(series[0].imdbId)
 

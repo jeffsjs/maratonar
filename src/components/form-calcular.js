@@ -36,7 +36,7 @@ class FormCalcular extends Component {
 		const { marathonDuration, dateNextEpisode } = stateRedux;
 		const { calc, hours, date, disableDate, disableHours } = this.state;
 
-		if (calc) {			
+		if (calc) {
 			const qtdHours = Math.ceil(marathonDuration/60);
 			let hoursPerDay = 0;
 			let distance = 0;
@@ -64,13 +64,11 @@ class FormCalcular extends Component {
 		}
 	}
 
-
-
 	render() {
 		const { stateRedux } = this.props;
 		const { loading, error, errorMessage, dateNextEpisode } = stateRedux;
 
-		if (error) return <div>{errorMessage}</div>;
+		if (error) return <div className='error'>{errorMessage}</div>;
 		if (loading) return <Loading />;
 
 		const { date, calc, hours, disableDate, disableHours } = this.state;
