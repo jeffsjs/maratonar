@@ -28,7 +28,7 @@ body {
 	width: 60%;
 	min-height: 600px;
 	padding: 20px;
-	margin: 0 auto;
+	margin: 20px auto;
 	border: 1px solid $color1;
 	border-radius: 6px;
 	text-align: center;
@@ -40,8 +40,41 @@ body {
 }
 
 h1 {
-	text-align: center;
-	margin: 20px 0 0 0;
-	font-size: 1.25em;
-	font-weight: normal;
+	font-size: 22px;
+	margin: 0 20px 20px;
+}
+
+h2 {
+	font-size: 20px;
+	margin: 15px 0;
+}
+
+h3 {
+	font-size: 18px;
+	margin: 12px 0;
+}
+
+svg {
+	display: inline-block;
+	width: 30px;
+	vertical-align: bottom;
+}
+
+.select-default {
+	width: 100%;
+	padding: 10px;
+	height: 49px;
+	font-size: 16px;
+	border: 1px solid $color1;
+	border-radius: 4px;
+}
+
+.react-date-picker {
+	width: 100%;
+	.react-date-picker__wrapper {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid $color1;
+		border-radius: 4px;
+	}
 }

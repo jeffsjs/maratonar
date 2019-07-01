@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { getSerieByID, getSeasons, setNextEpisode } from '../actions/actions';
+import { getSerieByID, getSeasons, setNextEpisode, errorNextEpisode } from '../actions/actions';
 
-import { format, differenceInDays } from 'date-fns';
+import { format, differenceInDays, isValid } from 'date-fns';
+import { durationToMin } from '../utils';
 
-import { durationToMin } from '../utils'
+import FormCalendar from './form-calcular';
+import Loading from './loading';
 
 class NextEpisode extends Component {
 	componentDidMount() {
@@ -17,6 +18,7 @@ class NextEpisode extends Component {
 	}
 
 	nextEpisode = (seasons, episodes) => {
+		const { errorNextEpisode } = this.props;
 		const today = format(new Date(), 'YYYY-MM-DD');
 		const nextSeasons = seasons.filter(season => differenceInDays(season.releaseDate, today) > 0);
 		let nextEpisode = {}
@@ -30,10 +32,10 @@ class NextEpisode extends Component {
 
 		const seasonsSortDesc = seasons.sort(function(a, b) { return b.id - a.id })[0];
 		const episodesLastSeason = episodes.filter(episodes => episodes.idSeason === seasonsSortDesc.id)[0].allEpisodes;
-		const nextEpisodes = episodesLastSeason.filter(episode => differenceInDays(episode.releaseDate, today) > 0);
+		const nextEpisodes = episodesLastSeason.filter(episode => isValid(new Date(episode.releaseDate)) && differenceInDays(episode.releaseDate, today) > 0);
 		nextEpisode = nextEpisodes.sort(function(a, b) { return a.id - b.id })[0];
 
-		return nextEpisode ? this.timeToNextEpisode(nextEpisode, episodes) : console.log({ error: 'Não possui novos lançamentos.' })
+		return nextEpisode ? this.timeToNextEpisode(nextEpisode, episodes) : errorNextEpisode('Não possui novos lançamentos.');
 	};
 
 	timeToNextEpisode = (nextEpisode, episodes) => {
@@ -45,18 +47,16 @@ class NextEpisode extends Component {
 		const hoursToNextEpisode = daysToNextEpisode * 24;
 		const minutesToNextEpisode = hoursToNextEpisode * 60;
 
-		const marathonDuration = episodesSort.reduce(function(accumulator, season) {
-			season.allEpisodes.forEach(function(epi) {
-				if (differenceInDays(epi.releaseDate, dateStart) < 0) {
+		const marathonDuration = episodesSort.reduce((accumulator, season) => {
+			season.allEpisodes.forEach((epi) => {
+				if (isValid(new Date(epi.releaseDate)) && differenceInDays(epi.releaseDate, dateStart) < 0) {
 					accumulator = accumulator + durationToMin(epi.duration);
 				}
 			});
 			return accumulator;
 		}, 0);
 
-		setNextEpisode({minutesToNextEpisode, marathonDuration, daysToNextEpisode, hoursToNextEpisode, nextEpisode, dateStart})
-
-		console.log(differenceInDays(nextEpisode.releaseDate, dateStart), marathonDuration);
+		setNextEpisode({minutesToNextEpisode, marathonDuration, daysToNextEpisode, hoursToNextEpisode, nextEpisode, dateStart});
 	}
 
 	componentWillReceiveProps(nextProps) {
@@ -65,21 +65,36 @@ class NextEpisode extends Component {
 	}
 
 	render() {
-		const { state, history, idSerie } = this.props;
-		const { loading, seasons, episodes, error, errorMessage } = state;
-
+		const { state, idSerie } = this.props;
+		const { loading, series, seasons, episodes, error, errorMessage, nextEpisode, dateNextEpisode } = state;
+		
+		const serie = series.filter(s => s.id === idSerie)[0];
+		
 		if (error) return <div>{errorMessage}</div>;
-		if (loading) return <div>CARREGANDO...</div>;
-		if (seasons.length !== episodes.length)
-			return <div>CARREGANDO EPISODES...</div>;
+		if (!dateNextEpisode || !serie || loading || seasons.length !== episodes.length) return <Loading />;
 
 		return (
-			<div className='seasons'>
-				{seasons.map(season => (
-					<div key={season.id}>{`Temporada: ${season.id}, Data: ${
-						season.releaseDate
-					}`}</div>
-				))}
+			<div className='calcular row column'>
+				<div className='row'>
+					<h2>
+						{serie.title}
+					</h2>
+				</div>
+				<div className='row'>
+					<div className='item'>
+						<FormCalendar />
+					</div>
+					<div className='item'>
+						<div className='row column'> 
+							<div className='item'> <h3>Next Episode</h3></div>
+							<div className='item'> <b>EP: </b> {nextEpisode.id}</div>
+							<div className='item'> <b>Title: </b> {nextEpisode.title}</div>
+							<div className='item'> <b>Date: </b> {nextEpisode.releaseDate}</div>
+							<div className='item'> <b>Duration: </b> {nextEpisode.duration}</div>
+							<div className='item'> <b>IMBD: </b> {nextEpisode.imdbId}</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		);
 	}
@@ -90,7 +105,7 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch =>
-	bindActionCreators({ getSerieByID, getSeasons, setNextEpisode }, dispatch);
+	bindActionCreators({ getSerieByID, getSeasons, setNextEpisode, errorNextEpisode }, dispatch);
 
 export default connect(
 	mapStateToProps,

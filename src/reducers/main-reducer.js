@@ -22,7 +22,7 @@ export default function(state = INITIAL_STATE, action) {
 		case ACTIONS.LOAD_SERIES:
 			return { ...state, loading: true };
 		case ACTIONS.SUCCESS_SERIES:
-			return { ...state, series: [...action.payload], loading: false };
+			return { ...state, series: [...action.payload], loading: false, error: false, errorMessage: '' };
 		case ACTIONS.SHOW_SERIE:
 			return { ...state, selectedSerie: action.payload, seasons: [], episodes: [], nextEpisode: [], dateNextEpisode: ''};
 		case ACTIONS.SUCCESS_SERIE_ID:
@@ -46,6 +46,7 @@ export default function(state = INITIAL_STATE, action) {
 		case ACTIONS.FAILURE_SERIES:
 		case ACTIONS.FAILURE_SERIE_ID:
 		case ACTIONS.FAILURE_EPISODES:
+		case ACTIONS.ERROR_NEXT_EPISODE:
 			return { ...state, series: [], season: [], episodes: [], nextEpisode: [], loading: false, error: true, errorMessage: action.payload };
 		default:
 			return state;
@@ -61,8 +62,3 @@ const addPoster = (poster, state) => {
 	})
 	return series;
 }
-
-// const deleteCampanha = (idCampanha, state) => {
-// 	const { campanhas } = state;
-// 	return campanhas.filter( item => item._id.search(idCampanha) === -1 );
-// };

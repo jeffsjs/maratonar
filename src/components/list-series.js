@@ -10,6 +10,8 @@ import { loadingSeries, showSerie, loadPosterSeason } from '../actions/actions';
 import { getPosterSeason } from '../api'
 import { ReactComponent as NoImage } from '../imgs/file-image.svg';
 
+import Loading from './loading';
+
 class ListSeries extends Component {
 	componentDidMount() {
 		const { loadingSeries } = this.props;
@@ -18,14 +20,14 @@ class ListSeries extends Component {
 
 	renderPoster = (imdbID, img) => {
 		const { loadPosterSeason } = this.props;
-		if (img && img.length > 0) return <img className='img-poster' src={img} />;
+		if (img && img.length > 0) return <img className='img-poster' src={img} alt='' />;
 
 		const getPosters = localStorage.getItem(ACTIONS.LOAD_POSTER_SEASON);
 		const objPosters = getPosters && getPosters.length > 0 ? JSON.parse(getPosters) : [];
 		const seasonPoster = objPosters.filter(season => season.imdbId === imdbID);
 
 		if (seasonPoster.length === 0) loadPosterSeason(imdbID);
-		return seasonPoster.length !== 0 ? <img className='img-poster' src={seasonPoster[0].img} /> : <NoImage />;
+		return seasonPoster.length !== 0 ? <img className='img-poster' src={seasonPoster[0].img} alt='' /> : <NoImage />;
 	}
 
 	render() {
@@ -33,8 +35,7 @@ class ListSeries extends Component {
 		const { loading, series, error, errorMessage } = state;
 
 		if (error) return <div>{errorMessage}</div>;
-		if (loading) return <div>CARREGANDO...</div>;
-
+		if (loading) return <Loading />;
 		if (series.length > 0) getPosterSeason(series[0].imdbId)
 
 		return (
@@ -48,7 +49,6 @@ class ListSeries extends Component {
 							<div>{`Seasons: ${serie.numberOfSeasons}`}</div>
 							<div>{`Date: ${serie.releaseDate}`}</div>
 						</div>
-
 					</div>
 				))}
 			</div>

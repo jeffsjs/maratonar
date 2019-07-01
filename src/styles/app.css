@@ -66,7 +66,7 @@ body {
   width: 60%;
   min-height: 600px;
   padding: 20px;
-  margin: 0 auto;
+  margin: 20px auto;
   border: 1px solid #456990;
   border-radius: 6px;
   text-align: center;
@@ -76,32 +76,78 @@ body {
   box-shadow: -2px 2px 5px 0px #456990; }
 
 h1 {
+  font-size: 22px;
+  margin: 0 20px 20px; }
+
+h2 {
+  font-size: 20px;
+  margin: 15px 0; }
+
+h3 {
+  font-size: 18px;
+  margin: 12px 0; }
+
+svg {
+  display: inline-block;
+  width: 30px;
+  vertical-align: bottom; }
+
+.select-default {
+  width: 100%;
+  padding: 10px;
+  height: 49px;
+  font-size: 16px;
+  border: 1px solid #456990;
+  border-radius: 4px; }
+
+.react-date-picker {
+  width: 100%; }
+  .react-date-picker .react-date-picker__wrapper {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #456990;
+    border-radius: 4px; }
+
+.btn {
+  display: inline-block;
+  position: relative;
+  font-family: 'Roboto Mono', 'Open Sans';
+  cursor: pointer;
+  padding: 0 22px;
+  border: 2px solid #456990;
+  background: #456990;
+  line-height: 26px;
+  font-size: 16px;
+  color: #fff;
   text-align: center;
-  margin: 20px 0 0 0;
-  font-size: 1.25em;
-  font-weight: normal; }
-
-.btn.btn-primary {
-  background: #028090;
-  border-color: #028090; }
-  .btn.btn-primary:hover {
-    background: #456990;
-    border-color: #456990; }
-
-.btn.btn-link {
-  background: transparent;
-  border-color: transparent; }
-  .btn.btn-link:hover {
+  text-transform: uppercase;
+  border-radius: 4px; }
+  .btn:hover {
+    background: #114b5f; }
+  .btn.block {
+    display: block;
+    width: 100%; }
+  .btn.lg {
+    line-height: 45px; }
+  .btn.btn-primary {
+    background: #114b5f;
+    border-color: #114b5f; }
+    .btn.btn-primary:hover {
+      background: #456990;
+      border-color: #456990; }
+  .btn.btn-link {
     background: transparent;
     border-color: transparent; }
-
-.btn.btn-outline-primary {
-  color: #028090;
-  border-color: #028090; }
-  .btn.btn-outline-primary:hover {
-    color: #fff;
-    background: #028090;
-    border-color: #028090; }
+    .btn.btn-link:hover {
+      background: transparent;
+      border-color: transparent; }
+  .btn.outline {
+    color: #456990;
+    border-color: #456990;
+    background: transparent; }
+    .btn.outline:hover {
+      color: #fff;
+      background: #114b5f; }
 
 .card-season {
   display: inline-block;

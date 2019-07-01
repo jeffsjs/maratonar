@@ -29,6 +29,11 @@ export const setNextEpisode = episode => ({
   payload: episode
 });
 
+export const errorNextEpisode = error => ({
+  type: ACTIONS.ERROR_NEXT_EPISODE,
+  payload: error
+});
+
 
 export const loadPosterSeason = season => ({
   type: ACTIONS.LOAD_POSTER_SEASON,
