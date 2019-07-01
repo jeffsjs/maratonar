@@ -7,8 +7,7 @@ import Store  from './store'
 import './styles/app.css'
 
 ReactDOM.render(
-  <Provider store={Store}>
-    
+  <Provider store={Store}>    
     <div className='main'>
       <div className='container'>
         <Routes />
